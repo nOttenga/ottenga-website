@@ -1,0 +1,754 @@
+
+@import '_base'
+
+
+.square
+  background-color rgba(0,0,0,.17)
+
+#main-wrapper
+  width 100%
+  height 100%
+  background-color #FCFCFC
+
+  //height 2500px
+
+.sub-wrapper
+  width 100%
+
+
+
+/*      HOME       */
+
+#home
+  height 100vh
+  #home-inner
+    height 100%
+
+#parallax
+  width 100%
+  //height 100vh
+  #parallax-image
+    position absolute
+    top 0
+    left 0
+    bottom 0
+    right 0
+    overflow hidden
+    img
+      height 100%
+      max-width initial
+      position absolute
+      right -150px
+
+  #parallax-mask
+    position absolute
+    top 100px
+    left 0
+    bottom 0
+    right 0
+    border-style solid
+    border-width calc(100vh - 100px) 0 0 100vw
+    border-color transparent transparent transparent #FCFCFC
+
+.social
+  position absolute
+  ul
+    text-align center
+    padding 15px
+    li
+      width 20px
+      padding-bottom 10px
+
+
+.info
+  lost-column 8/12 20px
+  lost-move 1/12
+  position relative
+  z-index 10
+  text-align right
+  color black
+  top 200px
+  h1
+    font-size 46px
+    font-weight 700
+
+  p
+    font-size 16px
+
+
+.home-square
+  lost-column 8/12 20px
+  lost-move 1/12
+  position absolute
+  bottom 30px
+  #home-square-inner
+    width 135px
+    height 11px
+    background-color black
+    position absolute
+    right 0
+
+
+#intro
+  width 100%
+  overflow hidden
+  background-color #FCFCFC
+  position relative
+  #intro-inner
+    lost-column 8/10 20px
+    lost-move 1/12
+    margin-top 100px
+    text-align right
+    h2
+      color #585858
+      font-size 28px
+      font-family 'Playfair Display'
+
+    p
+      color black
+      text-transform uppercase
+      font-size 20px
+      margin-top 30px
+      font-weight 700
+    #intro-square
+      width 200px
+      height 68px
+      position absolute
+      top 31px
+      right -120px
+
+
+#content
+  width 100%
+  padding-top 170px
+  background-color #FCFCFC
+  position relative
+  top -2px
+
+
+#content-title
+  lost-column 8/10 20px
+  lost-move 1/12
+  text-align right
+  margin-bottom 100px
+  float none !important   /*    RISOLVERE */
+  lost-utility: clearfix;
+
+  h3
+    color #585858
+    font-size 28px
+    font-family 'Playfair Display'
+    font-weight 700
+    span
+      font-weight 400
+
+
+/*************** SQUARES **********/
+
+
+
+
+.project-wrapper
+  width: w = 100%
+  overflow hidden
+  position relative
+  .project-inner
+    height 100%
+    width w
+  .project-inner-left
+    background-position center
+    background-size cover
+  .project-inner-right
+    position absolute
+    top 0
+    left w
+    z-index 10
+    transition all .3s ease-in-out
+    background-color #FFFFFF
+    text-align center
+    .project-inner-square
+      width 45px
+      height 11px
+      background-color black
+      position relative
+      margin 44px auto 45px auto
+    .project-inner-list
+      lost-column 6/10 0
+      lost-move 2/10
+      position absolute
+      //margin 0 auto
+
+    ul
+      display inline-block
+
+
+      li
+        font-family 'Playfair Display'
+        font-size 28px
+        color #585858
+        text-align left
+        padding-bottom 10px
+    .project-inner-link
+      lost-column 1/1
+      position absolute
+      bottom 45px
+      font-family 'azedobold'
+      font-size 28px
+      a
+        color #585858
+        &:visited
+          opacity .5
+  &:hover
+    .project-inner-right
+      left 0
+
+
+
+#experientia
+  height 350px
+  //max-width 433px
+  .project-inner-left
+    background-image url('../images/exp-main.jpg')
+    lost-align center
+    #experientia-title
+      margin-top 100px
+      p
+        font-size 28px
+      .square
+        background-color white
+      #square-exp-1
+        width 90px
+        height 7px
+      #square-exp-2
+        width 30px
+        height 7px
+        position absolute
+        right 0
+
+
+#belafonte-job
+  width 100%
+  height 280px
+  lost-align center
+
+#anima-job
+  width 100%
+  height 280px
+  lost-align center
+
+#ied-job
+  width 100%
+  height 280px
+  lost-align center
+
+#letlife-w
+  height 340px
+  .project-inner-left
+    background-image url('../images/txt_1.png')
+    #letlife-logo
+      position absolute
+      bottom 30px
+      right 30px
+      img
+        width 130px
+      .square
+        background-color white
+        width 33px
+        height 7px
+
+#equinoxe
+  height 280px
+  .project-inner-left
+    background-image url('../images/equinoxeph.jpeg')
+    #equinoxe-logo
+      position absolute
+      left 50%
+      top 100px
+      img
+        width 150px
+
+#letlife-a
+  height 400px
+  .project-inner-left
+    background-image  url('../images/txt_4.png')
+    .square
+      position absolute
+      top 30px
+      right 18px
+      width 40px
+      height 8px
+      background-color white
+    #letlife-a-logo
+      position absolute
+      bottom 40px
+      left 18px
+
+      img
+        width 130px
+
+#latrofa
+  height 350px
+  //max-width 433px
+  .project-inner-left
+    background-image url('../images/latrofa.png')
+    lost-align center
+
+    #latrofa-title
+      bottom 90px
+      top auto
+
+      p
+        font-size 36px
+        font-family 'azedobold'
+        padding 5px 0
+
+      .square
+        background-color white
+      #latrofa-square-1
+        width 90px
+        height 7px
+      #latrofa-square-2
+        width 30px
+        height 7px
+        position absolute
+        right 0
+
+
+#anima
+  height 290px
+  .project-inner-left
+    background-image url('../images/animaph.png')
+    #anima-square
+      width 50px
+      height 8px
+      background-color white
+      position absolute
+      top 25px
+      left 10px
+    #anima-logo
+      position absolute
+      bottom 10px
+      right 45px
+
+#ankhe
+  height 350px
+  .project-inner-left
+    background-image url('../images/ankheph.png')
+
+    font-family 'azedobold'
+    #ankhe-title
+      position absolute
+      font-size 36px
+      top 50px
+      left 20px
+    #ankhe-subtitle
+      position absolute
+      font-size 28px
+      bottom 30px
+      right 30px
+    #ankhe-logo
+      width 100%
+      height 100%
+      lost-align center
+      img
+        width 90px
+
+
+#opendata
+  height 320px
+  .project-inner-left
+    background-image url('../images/opendata.jpeg')
+    #opendata-mask
+      position absolute
+      top 0
+      left 0
+      bottom 0
+      right 0
+      img
+        width 100%
+        opacity .8
+    #opendata-content
+      text-align right
+      position absolute
+      z-index 2
+      bottom 30px
+      right 30px
+      font-family 'azedobold'
+      #opendata-subtitle
+        font-size 26px
+        padding-bottom 22px
+      #opendata-title
+        font-size 38px
+      #opendata-square
+        width 53px
+        height 8px
+        background-color white
+        margin 7px 0
+        position absolute
+        right 0
+        bottom 22px
+
+
+#granmadre
+  height 350px
+  .project-inner-left
+    background-image url('../images/gmadre.png')
+    #granmadre-logo
+      position absolute
+      left 30px
+      bottom 80px
+      img
+        width 60px
+    #granmadre-title
+      font-size 36px
+      font-family 'azedobold'
+      position absolute
+      left 85px
+      bottom 85px
+  .project-inner-right
+    p
+      color #585858
+      font-size 14px
+      font-family 'Playfair Display'
+      padding-top 28px
+
+
+#wbuddy
+  height 350px
+  .project-inner-left
+    background-image url('../images/wbuddy.png')
+    #wbuddy-title
+      font-size 36px
+      font-family 'azedobold'
+      position absolute
+      left 20px
+      bottom 30px
+      color black
+
+
+
+
+#footer
+  width 100%
+  #footer-utility
+    height 400px
+    width 100%
+    font-family 'Playfair Display'
+    text-align center
+    color #585858
+    #footer-social
+      margin-top 150px
+      lost-align center
+      ul
+        height 50px
+        li
+          display inline-block
+          padding 0 10px
+          img
+            width 20px
+            height 20px
+
+    #footer-top
+      padding-top 100px
+      cursor pointer
+      transition all 1s ease
+      &:hover
+        text-decoration line-through
+    #footer-imprint
+      padding-top 80px
+      a
+        text-decoration none
+        color #585858
+        &:hover
+          text-decoration line-through
+  #footer-image
+    width 100%
+    text-align right
+
+
+
+
+
+
+//////////
+
++above(530px)
+
+  #parallax
+
+    #parallax-image
+      img
+        right 0
+        position fixed
+
+
+  #intro
+    #intro-inner
+      #intro-sub-inner
+        max-width 370px
+        float right
+
+
+
+
+////////////////
+
++above(768px)
+
+  .info
+    lost-column 8/10 20px
+    lost-move 1/12
+    top 380px
+    h1
+      font-size 54px
+
+    p
+      font-size 22px
+
+  .home-square
+    lost-column 8/10 20px
+    lost-move 1/12
+    position absolute
+    bottom 200px
+
+  #footer
+    #footer-image
+      width 100%
+      text-align center
+
+
+
+////////////////////
+
++above(1024px)
+
+
+  ul
+    li
+      a:hover
+        transition 2s all ease-in-out
+        opacity .2
+
+  .info
+    lost-column 5/10 20px
+    lost-move 0/12
+    top calc(50% - 45px)
+
+
+  .home-square
+    lost-column 5/10 20px
+    lost-move 0/12
+    position absolute
+    bottom 40px
+
+  #intro
+
+    #intro-inner
+      lost-column 5/10 20px
+      lost-move 0/12
+      margin-top 250px
+
+
+  #content-title
+    lost-column 5/10 20px
+    lost-move 0/12
+    padding-top 50px
+    float none !important   /*    RISOLVERE */
+    lost-utility: clearfix;
+
+
+
+  #content-container
+    display block
+    width 100%
+    float none
+    position relative
+    min-height 3500px
+    lost-center 1024px
+
+
+
+
+
+
+
+
+
+  #experientia
+    position absolute
+    left 150px
+    width 350px
+    height 400px
+    z-index 100
+
+
+  #belafonte-job
+    width 350px
+    height 280px
+    lost-align center
+    position absolute
+    left 607px
+    top 96px
+
+  #letlife-w
+    width 450px
+    height 360px
+    position absolute
+    top 365px
+    left 320px
+    z-index 95
+
+  #equinoxe
+    width 320px
+    position absolute
+    top 734px
+    left 30px
+
+  #letlife-a
+    width 360px
+    position absolute
+    top 916px
+    left 582px
+    z-index 90
+
+  #latrofa
+    width 300px
+    position absolute
+    top 1098px
+    left 200px
+    z-index 85
+
+  #anima
+    width 450px
+    position absolute
+    left 100px
+    top 1455px
+    z-index 80
+
+  #anima-job
+    width 350px
+    height 280px
+    lost-align center
+    position absolute
+    top 1776px
+    left 80px
+
+  #ankhe
+    width 320px
+    position absolute
+    top 1676px
+    left 638px
+    z-index 75
+
+  #opendata
+    width 390px
+    position absolute
+    top 2000px
+    left 225px
+    z-index 70
+
+  #granmadre
+    width 400px
+    position absolute
+    top 2444px
+    left 596px
+    z-index 65
+
+  #ied-job
+    width 300px
+    height 280px
+    lost-align center
+    position absolute
+    left 46px
+    top 2470px
+
+  #wbuddy
+    width 548px
+    position absolute
+    top 2726px
+    left 285px
+    z-index 60
+
+
+
+////////////////////
+
+
++above(1440px)
+
+
+  #intro
+    position relative
+    top -2px
+    padding-bottom 170px
+
+
+  #content-container
+    lost-center 1440px
+    min-height 4000px
+
+  #experientia
+    left 202px
+    width 416px
+    height 500px
+
+  #belafonte-job
+    left 930px
+    top 158px
+
+  #letlife-w
+    left 447px
+    top 472px
+    width 517px
+    height 424px
+
+  #equinoxe
+    width 364px
+    height 320px
+    top 940px
+    left 157px
+
+  #letlife-a
+    width 410px
+    height 490px
+    top 1071px
+    left 813px
+
+  #latrofa
+    width 457px
+    height 400px
+    top 1370px
+    left 200px
+
+  #anima
+    width 619px
+    position absolute
+    left 77px
+    top 1800px
+
+  #ankhe
+    width 513px
+    height 472px
+    top 1933px
+    left 778px
+
+  #anima-job
+    top 2190px
+
+  #opendata
+    width 535px
+    height 400px
+    top 2490px
+    left 225px
+
+  #granmadre
+    width 458px
+    top 2936px
+    left 742px
+
+  #wbuddy
+    top 3336px
+    left 360px
+
+  #ied-job
+    top 3100px

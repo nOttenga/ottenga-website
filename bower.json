@@ -1,0 +1,42 @@
+{
+  "name": "comfortsense",
+  "version": "0.1.0",
+  "homepage": "https://github.com/belafontestudio/comfortsense-microwebsite",
+  "authors": [
+    "nOttenga <ottenga.nic@gmail.com>"
+  ],
+  "description": "comfortsense-miniwebsite",
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "enquire": "~2.1.2",
+    "normalize.css": "~3.0.3",
+    "wow": "~1.1.2",
+    "animate.css": "animate-css#~3.5.1",
+    "jquery.stellar": "stellar#~0.6.2"
+  },
+  "overrides": {
+    "jpanelmenu": {
+      "main": [
+        "./jquery.jpanelmenu.js"
+      ]
+    },
+    "owl-carousel": {
+      "main": [
+        "./owl-carousel/owl.carousel.js",
+        "./owl-carousel/owl.carousel.css",
+        "./owl-carousel/owl.theme.css"
+      ]
+    }
+  }
+}
